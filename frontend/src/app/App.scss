@@ -1,0 +1,44 @@
+// Global theme variables & transitions
+:root {
+	--app-bg: #f6f6f6;
+	--app-fg: #2b2024;
+	--app-accent: #07689f;
+	--app-sub: #a2d5f2;
+}
+
+html, body, .app-root {
+	background: linear-gradient(135deg, var(--app-bg) 0%, #ffffff 65%);
+	color: var(--app-fg);
+	transition: background 1.2s ease, color 0.4s ease;
+	min-height: 100%;
+}
+
+.app-root {
+	animation: app-gradient-intro 1.4s ease;
+}
+
+.app-root button:focus {
+	outline: 2px solid var(--app-sub);
+	outline-offset: 2px;
+}
+
+// Utility class for anime.js entrance
+.fade-in-up { opacity: 0; transform: translateY(12px); }
+
+// Generic fade in
+.fade-in { opacity: 0; animation: fadeIn .8s ease forwards; }
+
+@keyframes fadeIn { to { opacity: 1; } }
+
+@keyframes app-gradient-intro {
+	0% { opacity: 0; filter: blur(4px); }
+	50% { opacity: 1; filter: blur(0); }
+	100% { opacity: 1; }
+}
+
+*:focus-visible {
+	outline: 2px solid var(--app-accent);
+	outline-offset: 3px;
+	transition: outline-color .3s ease;
+}
+

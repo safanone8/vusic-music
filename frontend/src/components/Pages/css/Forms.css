@@ -1,0 +1,99 @@
+*{
+    font-family: cursive;
+}
+
+body{
+    /* background-color: antiquewhite; */
+    background: linear-gradient(135deg, rgb(88, 176, 235),rgb(204, 50, 224));
+    background-repeat: no-repeat;
+    
+
+}
+.container{
+    background-color: aquamarine;
+    padding: 5px 5px;
+    width: 30%;
+    margin: 330px auto;
+    animation: table-back 3s infinite alternate;
+    border-radius: 25px;
+    /* box-shadow: 5px 10px 15px rgb(29, 179, 224); */
+}
+.t-heading{
+    text-align: center;
+    font-size: 20px;
+}
+
+.t-heading2{
+    font-family: cursive;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* Input */
+
+input{
+    border-radius: 5px;
+    border-color: bisque;
+    margin: 3px 3px;
+}
+input[type=submit]{
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    color: rgb(27, 20, 17);
+    margin:7px auto;
+    border: none;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    font-weight: bolder;
+    font-size: large;
+}
+input[type=submit]:hover{
+    background-color: rgb(199, 17, 231);
+    color: rgb(255, 251, 250);
+}
+input[type=password],
+input[type=text]{
+    width: 50%;
+    font-weight: bolder ;
+    margin:5px 0px 5px 10px ;
+    transition: width .35s ease-in-out;
+
+}
+label{
+    font-weight: bold;
+    margin: 5px 0px 5px 10px;
+}
+
+/* Focus */
+
+input[type=text]:focus {
+    color: rgb(34, 3, 48);
+    background-color: antiquewhite;
+    width: 90%;
+}
+input[type=password]:focus {
+    color: rgb(34, 3, 48);
+    background-color: antiquewhite;
+    width: 90%;
+}
+
+@keyframes table-back {
+    0%{
+        box-shadow: 5px 5px 15px rgb(10, 9, 7) ;
+    } 
+    100%{
+        box-shadow: 5px 5px 15px rgb(233, 141, 20);
+    }
+}
+
+
+
+
+
+
+
+
+
+

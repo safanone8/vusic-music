@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS songs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  author_name VARCHAR(255),
+  img VARCHAR(255),
+  lang VARCHAR(64),
+  type VARCHAR(64),
+  music_file VARCHAR(255) NOT NULL,
+  times_played INT NOT NULL DEFAULT 0,
+  attribution JSON NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  INDEX idx_lang (lang),
+  INDEX idx_type (type)
+);

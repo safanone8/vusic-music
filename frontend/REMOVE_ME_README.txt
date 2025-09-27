@@ -1,0 +1,1 @@
+The original static musicDB (frontend/src/db/music.js) has been removed after migrating songs to the database. Build artifacts may still reference it until you rebuild. Run the frontend build/start to regenerate bundles without the legacy array.
