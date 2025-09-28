@@ -152,13 +152,13 @@ Make sure to configure your environment variables properly:
 
 ## 🎯 Future Enhancements
 
-- [ ] User authentication and profiles
-- [ ] Playlist management
-- [ ] Real-time lyrics display
-- [ ] Social features (sharing, comments)
-- [ ] Mobile app version
-- [ ] Cloud storage integration
+User authentication and profiles
+Playlist management
+Real-time lyrics display
+Social features (sharing, comments)
+Mobile app version
+Cloud storage integration
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by safan
